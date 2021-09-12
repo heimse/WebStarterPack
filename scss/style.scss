@@ -1,0 +1,64 @@
+// Variables
+@import '_variables';
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$defaultFont: 'Roboto';
+
+//nullify
+@import '_nullify';
+
+body{
+    color: #000;
+    font-family: $defaultFont;
+
+    text-align: center;
+    &._lock{
+        overflow: hidden;
+    }
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+//!basic styles for ghub pages
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.header, .footer {
+    padding: 30px;
+    background-color: gray;
+    color: #fff;
+}
+
+.popup__body {
+    color: #fff;
+}
+
+//mixins
+@import '_mixins';
+
+
+
+//burger
+@import '_burger';
+
+//popup
+@import '_popup';
+
+//header
+@import '_header';
